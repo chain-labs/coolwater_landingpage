@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .iphone .div {
@@ -12,7 +12,7 @@
   height: 2364px;
   overflow: hidden;
   position: relative;
-  width: 390px;
+  width: 100%
 }
 
 .iphone .overlap {
@@ -20,7 +20,10 @@
   left: -1px;
   position: absolute;
   top: -1px;
-  width: 392px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .iphone .group {
@@ -28,7 +31,7 @@
   left: 1px;
   position: absolute;
   top: 1px;
-  width: 390px;
+  width: 100%;
 }
 
 .iphone .frame {
@@ -46,7 +49,7 @@
   padding: 8px 18px;
   position: absolute;
   top: 0;
-  width: 392px;
+  width: 100%;
 }
 
 .iphone .frame-2 {
@@ -79,9 +82,8 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  left: 19px;
-  position: absolute;
-  top: 107px;
+  margin-top: 107px;
+
   width: fit-content;
 }
 
@@ -703,7 +705,7 @@
   left: 18px;
   position: absolute;
   top: 1113px;
-  width: 354px;
+  width: 90%;
 }
 
 .iphone .coolwater-s {
@@ -791,7 +793,6 @@
   background-color: #ffffff40;
   border: 1px solid;
   border-color: transparent;
-  border-image: linear-gradient(to bottom, rgba(250.76, 251.25, 253.94, 0.92), rgba(255, 255, 255, 0)) 1;
   border-radius: 16px;
   height: 283px;
   left: 58px;
@@ -807,6 +808,7 @@
   position: absolute;
   top: 273px;
   width: 289px;
+  border-top-left-radius: 16px;
 }
 
 .iphone .div-wrapper {
@@ -951,10 +953,11 @@
 
 .iphone .overlap-5 {
   height: 334px;
-  left: 34px;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
   top: 1305px;
-  width: 322px;
+  width: 90%;
 }
 
 .iphone .rectangle-4 {
