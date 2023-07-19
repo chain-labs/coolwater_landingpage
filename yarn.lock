@@ -3614,6 +3614,11 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@uidotdev/usehooks@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@uidotdev/usehooks/-/usehooks-2.0.1.tgz#ed76a6d2ea4fe008a1d732a45489025fa2a4c586"
+  integrity sha512-rJXxE3Y8g9utRbOS9Pj9tIvrnOdaakHIhLbMxBlErV8HydnGD0DveD82aLBfVTh1hBp5IXqpeHpMrPE9WIT7vQ==
+
 "@webassemblyjs/ast@1.11.6", "@webassemblyjs/ast@^1.11.5":
   version "1.11.6"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.11.6.tgz#db046555d3c413f8966ca50a95176a0e2c642e24"
@@ -3853,6 +3858,13 @@ ajv@^8.0.0, ajv@^8.9.0:
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
+
+akar-icons@^1.9.28:
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/akar-icons/-/akar-icons-1.9.28.tgz#366332260aefbe53e7cf2c1b80620e354043a79c"
+  integrity sha512-L8ESTpU5t9peFH233GaVGZ8V+Ct/Ja1+zwjNxPCVgbF90gc5NkHBRlGuoja6yHci6ABIv1/oE5XQwYQsUgGA3Q==
+  dependencies:
+    prop-types "^15.7.2"
 
 ansi-html-community@0.0.8, ansi-html-community@^0.0.8:
   version "0.0.8"
