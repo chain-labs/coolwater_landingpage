@@ -1,0 +1,275 @@
+.button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+}
+
+.button .label {
+  font-family: var(--label-small-font-family);
+  font-size: var(--label-small-font-size);
+  font-style: var(--label-small-font-style);
+  font-weight: var(--label-small-font-weight);
+  letter-spacing: var(--label-small-letter-spacing);
+  line-height: var(--label-small-line-height);
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button.disabled {
+  background-color: var(--backgrounddisabled-0);
+}
+
+.button.on {
+  border-radius: 999px;
+  gap: 4px;
+}
+
+.button.off {
+  border-radius: 6px;
+  gap: 6px;
+}
+
+.button.active.primary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+  box-shadow: var(--form-button-primary-active);
+}
+
+.button.active.secondary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193.42, 199.25, 207.59, 0.02) 100%);
+  box-shadow: var(--form-button-secondary-active);
+}
+
+.button.danger.normal {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193.42, 199.25, 207.59, 0.02) 100%);
+  box-shadow: var(--form-button-secondary-normal);
+}
+
+.button.pressed.danger {
+  background: linear-gradient(180deg, rgba(193, 199, 208, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%);
+  box-shadow: var(--form-button-secondary-normal);
+}
+
+.button.hover.primary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+  box-shadow: var(--form-button-primary-normal);
+}
+
+.button.hover.destructive {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+  box-shadow: var(--form-button-destructive-normal);
+}
+
+.button.hover.ghost {
+  background-color: var(--backgroundnormal-25);
+}
+
+.button.hover.secondary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193.42, 199.25, 207.59, 0.08) 100%);
+  box-shadow: var(--form-button-secondary-normal);
+}
+
+.button.off.large {
+  padding: 8px 10px;
+}
+
+.button.danger.active {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193.42, 199.25, 207.59, 0.02) 100%);
+  box-shadow: var(--form-button-secondary-active);
+}
+
+.button.normal.secondary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193.42, 199.25, 207.59, 0.02) 100%);
+  box-shadow: var(--form-button-secondary-normal);
+}
+
+.button.pressed.ghost {
+  background-color: var(--backgroundpressed-100);
+}
+
+.button.active.destructive {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+  box-shadow: var(--form-button-destructive-active);
+}
+
+.button.off.normal {
+  padding: 6px 8px;
+}
+
+.button.ghost.active {
+  background-color: var(--backgroundwhite);
+  box-shadow: var(--form-button-ghost-active);
+}
+
+.button.normal.primary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+}
+
+.button.pressed.primary {
+  border: 1px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+  box-shadow: var(--form-button-primary-normal);
+}
+
+.button.hover.danger {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(193.42, 199.25, 207.59, 0.08) 100%);
+  box-shadow: var(--form-button-secondary-normal);
+}
+
+.button.pressed.destructive {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.16) 100%);
+  border: 1px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+  box-shadow: var(--form-button-destructive-normal);
+}
+
+.button.pressed.secondary {
+  background: linear-gradient(180deg, rgba(193, 199, 208, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%);
+  box-shadow: var(--form-button-secondary-normal);
+}
+
+.button.normal.destructive {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+  box-shadow: var(--form-button-destructive-normal);
+}
+
+.button.normal.on {
+  padding: 6px;
+}
+
+.button.large.on {
+  padding: 8px;
+}
+
+.button.pressed.large.primary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.16) 100%);
+}
+
+.button.pressed.on.primary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.16) 100%);
+}
+
+.button.normal.large.primary {
+  box-shadow: var(--form-button-primary-normal);
+}
+
+.button.off.normal.primary {
+  box-shadow: var(--form-button-primary-normal);
+}
+
+.button.on.normal.normal.primary {
+  box-shadow: 0px 0px 0px 1px #4f47ea, 0px 1px 2px #1913a180;
+}
+
+.button.pressed.off.normal.primary {
+  background-color: #5e56ff;
+}
+
+.button.disabled .label {
+  color: var(--textdisabled-300);
+}
+
+.button.active.primary .label {
+  color: var(--textwhite);
+}
+
+.button.active.secondary .label {
+  color: var(--textmuted-600);
+}
+
+.button.danger.normal .label {
+  color: var(--secondaryred-100);
+}
+
+.button.pressed.danger .label {
+  color: var(--secondaryred-200);
+}
+
+.button.hover.primary .label {
+  color: var(--textwhite);
+}
+
+.button.hover.destructive .label {
+  color: var(--textwhite);
+}
+
+.button.hover.ghost .label {
+  color: var(--textloud-900);
+}
+
+.button.hover.secondary .label {
+  color: var(--textloud-900);
+}
+
+.button.danger.active .label {
+  color: var(--secondaryred-100);
+}
+
+.button.normal.secondary .label {
+  color: var(--textmuted-600);
+}
+
+.button.pressed.ghost .label {
+  color: var(--textloud-900);
+}
+
+.button.active.destructive .label {
+  color: var(--textwhite);
+}
+
+.button.ghost.active .label {
+  color: var(--textmuted-600);
+}
+
+.button.normal.primary .label {
+  color: var(--textwhite);
+}
+
+.button.pressed.primary .label {
+  color: var(--textwhite);
+}
+
+.button.hover.danger .label {
+  color: var(--secondaryred-200);
+}
+
+.button.pressed.secondary .label {
+  color: var(--textloud-900);
+}
+
+.button.pressed.destructive .label {
+  color: var(--textwhite);
+}
+
+.button.ghost.normal .label {
+  color: var(--textmuted-600);
+}
+
+.button.normal.destructive .label {
+  color: var(--textwhite);
+}
