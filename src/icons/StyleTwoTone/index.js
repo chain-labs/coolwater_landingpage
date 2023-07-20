@@ -1,1 +1,0 @@
-export { StyleTwoTone } from "./StyleTwoTone";
