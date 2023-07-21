@@ -5,8 +5,8 @@ import ChevronRight from '../../../../public/static/img/chevron-right.svg';
 
 const Box4 = () => {
 	return (
-		<div className="flex justify-center items-center">
-			<div className="w-[481px] h-[230px] px-3.5 py-4 bg-neutral-50 rounded-2xl border border-blue-600 border-opacity-5 flex-col justify-start items-start gap-9 inline-flex">
+		<div className="flex justify-center items-center relative top-[347px]">
+			<div className="md:w-[481px] md:h-[230px] px-3.5 py-4 w-[322px] h-[308px] bg-neutral-50 rounded-2xl border border-blue-600 border-opacity-5 flex-col justify-start items-start gap-9 inline-flex">
 				<div className="self-stretch justify-start items-center gap-3 inline-flex">
 					<Image
 						className="w-12 h-12 rounded-full"
@@ -23,8 +23,8 @@ const Box4 = () => {
 					</div>
 				</div>
 				<div className="self-stretch h-28 flex-col justify-start items-start gap-8 flex">
-					<div className="self-stretch rounded-xl justify-start items-center gap-9 inline-flex">
-						<div className="justify-start items-center gap-2.5 flex">
+					<div className="self-stretch rounded-xl justify-start items-center gap-9 inline-flex flex-wrap">
+						<div className="justify-start items-center gap-2.5 flex flex-auto">
 							<div className="p-2.5 bg-orange-100 rounded-3xl flex-col justify-start items-start gap-2.5 inline-flex">
 								<div className="text-stone-700 text-xl font-semibold leading-tight">
 									🔥
@@ -70,7 +70,14 @@ const Box4 = () => {
 							</div>
 						</div>
 					</div>
-					<div className="self-stretch px-2.5 py-2 bg-[#3351F2] rounded-3xl shadow border border-white border-opacity-10 justify-center items-center gap-1.5 inline-flex">
+					<div
+						className="self-stretch px-2.5 py-2 rounded-3xl shadow border border-white border-opacity-10 justify-center items-center gap-1.5 inline-flex"
+						style={{
+							background:
+								'linear-gradient(0deg, #3351F2 0%, #3351F2 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%)',
+							boxShadow: '0px 0px 0px 1px #364ED1',
+						}}
+					>
 						<div className="text-center text-white text-sm font-medium leading-tight">
 							Contribute to the pool{' '}
 						</div>

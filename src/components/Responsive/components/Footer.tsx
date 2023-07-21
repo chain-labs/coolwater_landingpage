@@ -4,7 +4,7 @@ import Divider from '../../../../public/static/img/divider.svg';
 
 const Footer = () => {
 	return (
-		<div>
+		<div className="relative top-[500px]">
 			<div className="w-[100%] h-20 flex-col justify-center items-center gap-6 inline-flex top-[20%]">
 				<div className="justify-center items-center gap-6 inline-flex">
 					<div className="w-44 text-center text-slate-500 text-sm font-medium leading-none">

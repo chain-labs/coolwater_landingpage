@@ -11,10 +11,12 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Image from 'next/image';
 import BackgroundImage from '../../../public/static/img/group-1171274935.png';
+import FooterMobile from './components/FooterMobile';
+import NavbarMobile from './components/NavbarMobile';
 
 const LandingPage = () => {
 	return (
-		<div>
+		<div className="w-[100%]">
 			<div>
 				<Image
 					className="w-[120%] self-stretch absolute"
@@ -22,20 +24,26 @@ const LandingPage = () => {
 					alt="image"
 				/>
 			</div>
-			<Navbar />
+			<NavbarMobile />
 			<BlurboxComp />
-			{/* <TextComponent /> */}
-			<div className="flex flex-row items-center justify-center relative top-[160px] gap-4">
+			<TextComponent />
+			<div className="flex lg:flex-row items-center justify-center relative top-[160px] gap-4 flex-col-reverse">
 				<Box1 />
-				<div className="flex flex-col items-center justify-center relative">
+				<div className="flex flex-col items-center justify-center relative gap-4">
 					<Box2 />
 					<Box3 />
 				</div>
 			</div>
-			{/* <TextComponent2 /> */}
+			<TextComponent2 />
 			<Box4 />
 			<BannerComp />
-			<Footer />
+			<div className="invisible md:visible hidden md:flex">
+				<Footer />
+			</div>
+			<div className="visible flex md:invisible md:hidden">
+				<FooterMobile />
+			</div>
+			{/* <Footer /> */}
 		</div>
 	);
 };
